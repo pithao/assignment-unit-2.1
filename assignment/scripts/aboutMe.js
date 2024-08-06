@@ -10,39 +10,66 @@ let fullName = 'Pa Thao';
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber = '15';
-    console log('Lucky Number 15');
+    console.log('luckyNumber');
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
 //     'My name is (full name), and I think (lucky number) is a winner!'.
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
-let introduction =
+let introduction = 'My name is ' + firstName + ' and I think ' + luckyNumber + ' is a winner!';
+console.log(introduction);
   
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
+let adventurous = true;
+    console.log('adventurous');
 
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
+let favFood1 = 'pasta';
+let favFood2 = 'sushi';
+let favFood3 = 'steak';
+
+let food = favFood1 + ", " + favFood2 + ' and ' + favFood3
+    console.log('food');
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
+let pets = 0;
+    console.log('pets');
 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
+let friendsPets = 2; 
 
 // 10 - Add two pets to your `pets` variable
+pets += 2; 
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
+const allowedPets = 2;
 
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
+let result;
+        if (adventurous)  {
+           result = "Adventures are great!";
+        } else {
+            result = "How about we stay home?";
+        }
+        console.log("result")
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
+let diceRoll = "Try again later.";
+  if (luckyNumber = 2 && adventurous)
+{
+  diceRoll = "Roll the dice!"
+}
+  console.log(diceRoll);
 
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -53,6 +80,15 @@ let introduction =
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 
+let petStatus;
+  if (pets < allowedPets) {
+    petStatus = "I can have more pets"
+  }
+  if (pets = allowedPets) {
+    petStatus = "I have enough pets"
+  }
+  if (pets > allowedPets) {
+    petStatus = "Oh no, I have too many pets!"
 
 // STRETCH GOALS:
 
@@ -62,6 +98,15 @@ let introduction =
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 
+let mostPets;
+  if (pets > friendsPets) {
+    mostPets = pets
+  } else {
+    mostPets = friendsPets;
+  }
+  console.log(mostPets);
+
+
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -70,6 +115,7 @@ let introduction =
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
+
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
